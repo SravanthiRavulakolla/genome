@@ -6,7 +6,7 @@ import os
 import json
 from scripts.genomic_classification import preprocess_data
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
